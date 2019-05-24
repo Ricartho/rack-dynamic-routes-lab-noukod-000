@@ -7,7 +7,7 @@ class Application
       item_name = req.path.split("/items/").last
       item = @@items.find{|el| el.name == item_name}
       
-      if @@
+      if @@items.include?()
         
       end 
     else
