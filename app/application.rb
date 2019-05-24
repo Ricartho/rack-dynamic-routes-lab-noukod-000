@@ -8,6 +8,8 @@ class Application
       item = @@items.find{|el| el.name == item_name}
       
       if @@items.include?(item)
+        resp.write item.price 
+        resp.status = 200
         
       end 
     else
