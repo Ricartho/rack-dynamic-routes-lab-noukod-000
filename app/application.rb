@@ -10,7 +10,8 @@ class Application
       if @@items.include?(item)
         resp.write item.price 
         resp.status = 200
-        
+      else 
+        resp.write 
       end 
     else
       resp.write "Route not found"
